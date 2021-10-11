@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/startlogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:src="@drawable/unnamed" />
+
+    <ImageView
+        android:id="@+id/mainpic"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_below="@+id/startlogo"
+        android:layout_centerHorizontal="true"
+
+        android:src="@drawable/appicon" />
+
+    <TextView
+            android:id="@+id/wel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/mainpic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/createacc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wel"
+            android:layout_centerHorizontal="true"
+            android:text="Create an account and access thousand" />
+
+        <TextView
+            android:id="@+id/stuffs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/createacc"
+            android:text="of cool stuffs" />
+
+    <Button
+        android:id="@+id/getstart"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stuffs"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Getting Started"
+        android:textAllCaps="false"
+        android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@+id/getstart">
+
+            <TextView
+                android:id="@+id/already"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login"
+                android:layout_alignParentStart="true"
+                android:text="Already have an account ?" />
+
+            <TextView
+                android:id="@+id/loginbut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login"
+                android:layout_alignParentEnd="true"
+                android:layout_toEndOf="@+id/already"
+                android:backgroundTint="@color/white"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:text="Log in"
+                android:textAllCaps="false"
+                android:textColor="@color/teal_200" />
+
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
+
+
